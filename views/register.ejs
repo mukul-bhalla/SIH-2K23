@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <h1>Sign Up</h1>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <label for="name">Enter Name</label>
+        <input type="text" name="name" id="name" placeholder="name">
+        <label for="password">Enter Password</label>
+        <input type="password" name="password" id="password" placeholder="password">
+        <label for="email">Enter Email</label>
+        <input type="email" name="email" id="email" placeholder="email">
+        <label for="role">Select your role: </label>
+        <select id="role" name="role">
+            <option value="-">-- Select your role --</option>
+            <option value="Client">Client</option>
+            <option value="Junior Advocate">Junior Advocate</option>
+            <option value="Senior Advocate">Senior Advocate</option>
+        </select>
+
+
+        <label for="image" class="form-label custom-file-label">Upload Profile Photo </label>
+        <input class="form-control" type="file" id="image" name="image">
+        <button class="btn btn-primary">Submit</button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </form>
+</body>
+
+</html>
